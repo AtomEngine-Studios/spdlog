@@ -21,6 +21,10 @@ project "spdlog"
         "SPDLOG_COMPILED_LIB"
 	}
 
+    buildoptions {
+        "/utf-8"
+    }
+
 	filter "system:windows"
         systemversion "latest"
 
