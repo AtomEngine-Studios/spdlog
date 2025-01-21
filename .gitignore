@@ -17,6 +17,9 @@ build/*
 *.opensdf
 *.sdf
 
+**/bin/
+bin-int/
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
