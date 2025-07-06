@@ -1,7 +1,7 @@
 project "spdlog"
     kind "StaticLib"
     language "C++"
-    cppdialect "C++11"
+    cppdialect "C++20"
     staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -18,7 +18,8 @@ project "spdlog"
 
 	defines {
 		"_CRT_SECURE_NO_WARNINGS",
-        "SPDLOG_COMPILED_LIB"
+        "SPDLOG_COMPILED_LIB",
+		"SPDLOG_USE_STD_FORMAT"
 	}
 
     buildoptions {
