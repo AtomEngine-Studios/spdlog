@@ -22,12 +22,9 @@ project "spdlog"
 		"SPDLOG_USE_STD_FORMAT"
 	}
 
-    buildoptions {
-        "/utf-8"
-    }
-
 	filter "system:windows"
         systemversion "latest"
+        buildoptions { "/utf-8" }
 
 	filter "configurations:Debug"
 		runtime "Debug"
